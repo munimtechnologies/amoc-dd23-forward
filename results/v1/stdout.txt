@@ -1,0 +1,68 @@
+===== run-01-python: python -m unittest -v test_ddfit test_hadisst
+
+===== run-02-python: python job.py --data-dir /data --out-dir /out
+[     2.7s] SG cells: 744; DD23 rows: 1812 (1870.0833 .. 2021.0)
+[    21.6s] HadISST1_SST_1870-1900.txt.gz: 372 months
+[    37.2s] HadISST1_SST_1901-1930.txt.gz: 360 months
+[    53.5s] HadISST1_SST_1931-1960.txt.gz: 360 months
+[    69.7s] HadISST1_SST_1961-1990.txt.gz: 360 months
+[    76.6s] HadISST1_SST_1991-2003.txt.gz: 156 months
+[    77.7s] HadISST1_SST_2004.txt.gz: 12 months
+[    78.8s] HadISST1_SST_2005.txt.gz: 12 months
+[    79.7s] HadISST1_SST_2006.txt.gz: 12 months
+[    80.6s] HadISST1_SST_2007.txt.gz: 12 months
+[    81.3s] HadISST1_SST_2008.txt.gz: 12 months
+[    82.2s] HadISST1_SST_2009.txt.gz: 12 months
+[    83.2s] HadISST1_SST_2010.txt.gz: 12 months
+[    84.1s] HadISST1_SST_2011.txt.gz: 12 months
+[    85.1s] HadISST1_SST_2012.txt.gz: 12 months
+[    86.1s] HadISST1_SST_2013.txt.gz: 12 months
+[    87.0s] HadISST1_SST_2014.txt.gz: 12 months
+[    88.0s] HadISST1_SST_2015.txt.gz: 12 months
+[    88.9s] HadISST1_SST_2016.txt.gz: 12 months
+[    89.8s] HadISST1_SST_2017.txt.gz: 12 months
+[    90.6s] HadISST1_SST_2018.txt.gz: 12 months
+[    91.4s] HadISST1_SST_2019.txt.gz: 12 months
+[    92.2s] HadISST1_SST_2020.txt.gz: 12 months
+[    93.0s] HadISST1_SST_2021.txt.gz: 12 months
+[    93.9s] HadISST1_SST_2022.txt.gz: 12 months
+[    96.1s] HadISST1_SST_2023.txt.gz: 12 months
+[    96.8s] HadISST1_SST_2024.txt.gz: 12 months
+[    97.7s] HadISST1_SST_2025.txt.gz: 12 months
+[    98.3s] HadISST1_SST_2026.txt.gz: 9 months
+[    98.7s] HadISST months: 1881, 1870-01 .. 2026-09, duplicates skipped 0
+[    98.7s] gate: SG=u_ice GM=u_ice r=0.9821760134392519 rms=0.16694301335080114 -> RECON_WEAK
+[    98.7s] through-2020 months: 1812; out-of-sample months: 69
+[    99.9s] control fit on DD23 file: tc=2086.46 tau=162.46 A=0.7132
+[   101.0s] M20: tc=2073.83 tau=149.83 A=0.6405
+[   102.4s] Mlatest: tc=2081.06 tau=157.06 A=0.6137
+[   103.7s] T1 q=0.802 -> WITHIN_FORECAST; T2 ['VARIANCE_HIGH']; T3 dtc=7.23 -> LATER
+[   111.0s] POINT gate=RECON_WEAK control=REPRO_FAIL T1=WITHIN_FORECAST T2=VARIANCE_HIGH T3=LATER (tc 2073.8 -> 2081.1)
+[   111.0s] starting bootstraps
+[   129.7s] bootstrap 100/300
+[   149.9s] bootstrap 200/300
+[   173.1s] bootstrap 300/300
+[   173.1s] control bootstrap: {'B': 300, 'n_ok': 300, 'n_tipped_in_simulation': 0, 'n_fit_failed': 0, 'tc_mean': 4497.218120658836, 'tc_q025': 2040.5133959703476, 'tc_q17': 2057.847091774614, 'tc_q50': 2095.5944963203056, 'tc_q83': 2204.2222415793794, 'tc_q975': 5239.476134049744}
+[   192.4s] bootstrap 100/1000
+[   210.2s] bootstrap 200/1000
+[   229.2s] bootstrap 300/1000
+[   250.2s] bootstrap 400/1000
+[   269.5s] bootstrap 500/1000
+[   288.8s] bootstrap 600/1000
+[   310.4s] bootstrap 700/1000
+[   329.4s] bootstrap 800/1000
+[   348.7s] bootstrap 900/1000
+[   377.2s] bootstrap 1000/1000
+[   377.2s] M20 bootstrap: {'B': 1000, 'n_ok': 1000, 'n_tipped_in_simulation': 0, 'n_fit_failed': 0, 'tc_mean': 3143.2060529871205, 'tc_q025': 2043.8978444609215, 'tc_q17': 2057.352962649835, 'tc_q50': 2082.058682861009, 'tc_q83': 2151.533439618176, 'tc_q975': 2526.5897459252524}
+[   408.6s] bootstrap 100/1000
+[   440.8s] bootstrap 200/1000
+[   475.0s] bootstrap 300/1000
+[   497.1s] bootstrap 400/1000
+[   518.9s] bootstrap 500/1000
+[   539.0s] bootstrap 600/1000
+[   561.5s] bootstrap 700/1000
+[   583.0s] bootstrap 800/1000
+[   608.1s] bootstrap 900/1000
+[   633.2s] bootstrap 1000/1000
+[   633.2s] Mlatest bootstrap: {'B': 1000, 'n_ok': 999, 'n_tipped_in_simulation': 1, 'n_fit_failed': 0, 'tc_mean': 3754.233078734349, 'tc_q025': 2050.246734115072, 'tc_q17': 2063.3960406389556, 'tc_q50': 2091.5647799980816, 'tc_q83': 2177.9871876384896, 'tc_q975': 2997.9329592319873}
+[   633.3s] OUTCOME gate=RECON_WEAK control=REPRO_FAIL T1=WITHIN_FORECAST T2=VARIANCE_HIGH T3=LATER (tc 2073.8 -> 2081.1)
