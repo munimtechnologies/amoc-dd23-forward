@@ -1,0 +1,84 @@
+===== run-01-python: python -m unittest -v test_ddfit test_hadisst test_ddrep
+
+===== run-02-python: python job_v2.py --data-dir /data --out-dir /out
+[     4.3s] replica original_pen: tc=2056.80 a=0.8668 (authors_start)
+[     5.4s] replica corrected_pen: tc=2064.77 a=0.8549 (authors_start)
+[     6.8s] replica corrected_mu_next_pen: tc=2064.71 a=0.8553 (authors_start)
+[     8.0s] replica corrected_nopen: tc=2086.30 a=0.7132 (authors_start)
+[     9.0s] replica original_nopen: tc=2078.08 a=0.7273 (authors_start)
+[    10.2s] replica corrected_pen_beta1: tc=2123.55 a=1.2895 (authors_start)
+[    12.6s] REPLICA REPLICA_OK
+[    22.7s] HadISST1_SST_1870-1900.txt.gz read; 372 months so far
+[    31.9s] HadISST1_SST_1901-1930.txt.gz read; 732 months so far
+[    41.0s] HadISST1_SST_1931-1960.txt.gz read; 1092 months so far
+[    49.8s] HadISST1_SST_1961-1990.txt.gz read; 1452 months so far
+[    53.9s] HadISST1_SST_1991-2003.txt.gz read; 1608 months so far
+[    54.6s] HadISST1_SST_2004.txt.gz read; 1620 months so far
+[    55.3s] HadISST1_SST_2005.txt.gz read; 1632 months so far
+[    55.8s] HadISST1_SST_2006.txt.gz read; 1644 months so far
+[    56.4s] HadISST1_SST_2007.txt.gz read; 1656 months so far
+[    56.9s] HadISST1_SST_2008.txt.gz read; 1668 months so far
+[    57.5s] HadISST1_SST_2009.txt.gz read; 1680 months so far
+[    58.0s] HadISST1_SST_2010.txt.gz read; 1692 months so far
+[    58.6s] HadISST1_SST_2011.txt.gz read; 1704 months so far
+[    59.1s] HadISST1_SST_2012.txt.gz read; 1716 months so far
+[    59.7s] HadISST1_SST_2013.txt.gz read; 1728 months so far
+[    60.2s] HadISST1_SST_2014.txt.gz read; 1740 months so far
+[    60.8s] HadISST1_SST_2015.txt.gz read; 1752 months so far
+[    61.3s] HadISST1_SST_2016.txt.gz read; 1764 months so far
+[    61.8s] HadISST1_SST_2017.txt.gz read; 1776 months so far
+[    62.3s] HadISST1_SST_2018.txt.gz read; 1788 months so far
+[    62.8s] HadISST1_SST_2019.txt.gz read; 1800 months so far
+[    63.3s] HadISST1_SST_2020.txt.gz read; 1812 months so far
+[    63.8s] HadISST1_SST_2021.txt.gz read; 1824 months so far
+[    64.3s] HadISST1_SST_2022.txt.gz read; 1836 months so far
+[    64.9s] HadISST1_SST_2023.txt.gz read; 1848 months so far
+[    65.5s] HadISST1_SST_2024.txt.gz read; 1860 months so far
+[    66.0s] HadISST1_SST_2025.txt.gz read; 1872 months so far
+[    66.5s] HadISST1_SST_2026.txt.gz read; 1881 months so far
+[    67.0s] HARMONISE HARMONISE_OK: SG k=0.5843 c=-0.0000; GM k=0.6870 c=-0.0000; AMOC2 r=0.999998 rms=0.00077
+[    72.0s] P: tc 2064.77 -> 2069.99 (LATER); T1 q=0.701 WITHIN_FORECAST; T2 ['CALIBRATED']
+[    72.9s] U: tc 2086.50 -> 2093.99 (LATER); T1 q=0.671 WITHIN_FORECAST; T2 ['CALIBRATED']
+[    81.6s] data to 2020-12: P tc=2064.77, U tc=2086.50
+[    83.7s] data to 2021-12: P tc=2066.71, U tc=2089.10
+[    85.6s] data to 2022-12: P tc=2067.07, U tc=2089.49
+[    87.6s] data to 2023-12: P tc=2066.95, U tc=2089.68
+[    89.6s] data to 2024-12: P tc=2071.21, U tc=2096.78
+[    91.6s] data to 2025-12: P tc=2072.40, U tc=2099.61
+[    93.7s] data to 2026-09: P tc=2069.99, U tc=2093.99
+[    93.7s] POINT replica=REPLICA_OK harmonise=HARMONISE_OK P: WITHIN_FORECAST LATER | U: WITHIN_FORECAST LATER
+[   114.0s] penalised bootstrap 100/1000
+[   134.6s] penalised bootstrap 200/1000
+[   154.0s] penalised bootstrap 300/1000
+[   173.4s] penalised bootstrap 400/1000
+[   193.3s] penalised bootstrap 500/1000
+[   213.1s] penalised bootstrap 600/1000
+[   232.7s] penalised bootstrap 700/1000
+[   252.5s] penalised bootstrap 800/1000
+[   271.8s] penalised bootstrap 900/1000
+[   290.9s] penalised bootstrap 1000/1000
+[   290.9s] P 2020 bootstrap: {'B': 1000, 'n_ok': 1000, 'n_tipped_in_simulation': 0, 'n_fit_failed': 0, 'tc_mean': 2064.4693841327316, 'tc_q025': 2036.2270503415687, 'tc_q17': 2047.7456074962417, 'tc_q50': 2061.978048603366, 'tc_q83': 2083.011537155073, 'tc_q975': 2107.015196181266}
+[   311.4s] penalised bootstrap 100/1000
+[   332.1s] penalised bootstrap 200/1000
+[   352.5s] penalised bootstrap 300/1000
+[   373.3s] penalised bootstrap 400/1000
+[   394.3s] penalised bootstrap 500/1000
+[   415.0s] penalised bootstrap 600/1000
+[   436.2s] penalised bootstrap 700/1000
+[   457.1s] penalised bootstrap 800/1000
+[   478.2s] penalised bootstrap 900/1000
+[   499.3s] penalised bootstrap 1000/1000
+[   499.3s] P latest bootstrap: {'B': 1000, 'n_ok': 1000, 'n_tipped_in_simulation': 0, 'n_fit_failed': 0, 'tc_mean': 2068.3105925594123, 'tc_q025': 2040.866005568695, 'tc_q17': 2051.940548972718, 'tc_q50': 2065.312944625347, 'tc_q83': 2084.6683541563984, 'tc_q975': 2111.12617550821}
+[   513.0s] bootstrap 100/500
+[   527.4s] bootstrap 200/500
+[   541.2s] bootstrap 300/500
+[   554.9s] bootstrap 400/500
+[   568.9s] bootstrap 500/500
+[   568.9s] U 2020 bootstrap: {'B': 500, 'n_ok': 500, 'n_tipped_in_simulation': 0, 'n_fit_failed': 0, 'tc_mean': 4787.119671616559, 'tc_q025': 2043.6782545644778, 'tc_q17': 2057.1943546982156, 'tc_q50': 2097.0788816322033, 'tc_q83': 2197.9242595104556, 'tc_q975': 59748.65393361919}
+[   583.3s] bootstrap 100/500
+[   598.5s] bootstrap 200/500
+[   613.3s] bootstrap 300/500
+[   627.5s] bootstrap 400/500
+[   641.7s] bootstrap 500/500
+[   641.7s] U latest bootstrap: {'B': 500, 'n_ok': 500, 'n_tipped_in_simulation': 0, 'n_fit_failed': 0, 'tc_mean': 5342.4215734402405, 'tc_q025': 2047.6249451833398, 'tc_q17': 2062.3073434060784, 'tc_q50': 2098.901898849858, 'tc_q83': 2223.6485667080415, 'tc_q975': 101923.4154771636}
+[   641.7s] OUTCOME replica=REPLICA_OK harmonise=HARMONISE_OK P: T1=WITHIN_FORECAST T3=LATER (2064.8 -> 2070.0) | U: T1=WITHIN_FORECAST T3=LATER (2086.5 -> 2094.0)

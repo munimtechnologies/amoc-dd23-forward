@@ -12,19 +12,22 @@ overturning (AMOC) collapse**. The forecast puts the tipping year at 2065 (95%: 
 The design, the thresholds and every grade label were frozen in [PREREGISTRATION.md](PREREGISTRATION.md) on
 2026-11-24, before the job ran.
 
-## Status
+## Result (v2, graded 2026-11-24): [GRADING-v2.md](GRADING-v2.md), files in `results/v2/`
 
-- **v1 (pre-registered) has run and is graded:** [GRADING-v1.md](GRADING-v1.md), files in `results/v1/`.
-  - With data to September 2026 (69 new months), the fingerprint stayed inside the model's forecast range
-    (T1 WITHIN_FORECAST, q = 0.80).
-  - The post-2020 months were noisier than the model allows (T2 VARIANCE_HIGH).
-  - The refitted tipping year moved 7.2 years later, from 2073.8 to 2081.1 (T3 LATER).
-  - The reproduction control failed: v1 gives 2086.5 on the authors' own file, not 2065. v1's likelihood
-    has no penalty, while the authors' code penalises a < 1 (see Morr et al. 2026).
-- **v2** ([DEVIATION-2026-11-24.md](DEVIATION-2026-11-24.md), written before v2 ran) repeats the forward test
-  with a line-by-line replica of the authors' penalised estimator (`ddrep.py`). The replica must first
-  reproduce both numbers they published from their own file (2056.52 and 2065). v2 also uses the SST variant
-  that matches their file, put on their file's scale. The unpenalised estimate is reported alongside.
+- **Gates passed.** A line-by-line replica of the authors' penalised R estimator (`ddrep.py`) reproduces
+  their published numbers from their own file: 2056.80 (published 2056.52) and 2064.77 (published 2065),
+  plus Table 1's 2123 and 2068. Our HadISST rebuild matches their series to 0.0008 K RMS.
+- **T1 WITHIN_FORECAST:** with data to September 2026 (69 new months) the fingerprint stayed inside the
+  model's forecast range (q = 0.70). 2021-22 ran above the model's median path; 2025-26 ran below it.
+- **T2 CALIBRATED:** the post-2020 one-step residuals are consistent with the model's noise.
+- **T3 LATER:** the refitted tipping year moved from 2064.8 to 2070.0 (+5.2 years; threshold +5). The 95%
+  range moved from 2036-2107 to 2041-2111.
+- The unpenalised estimator (reported alongside) moves from 2086.5 to 2094.0; the penalty changes the date
+  far more than six years of data do, as Morr et al. (2026) found for the penalty.
+
+v1 (unpenalised, a slightly different SST variant) is graded in [GRADING-v1.md](GRADING-v1.md); its
+reproduction control failed, which is why v2 was declared in
+[DEVIATION-2026-11-24.md](DEVIATION-2026-11-24.md) before v2 ran.
 
 ## Files
 
@@ -36,6 +39,7 @@ The design, the thresholds and every grade label were frozen in [PREREGISTRATION
 | `grade.py` | the frozen v1 grading rules |
 | `job.py` / `job_v2.py` | the v1 and v2 jobs (download public data, fit, test, write results) |
 | `test_*.py` | unit tests with hand-checked values (`python -m unittest`) |
+| `results/v1/`, `results/v2/` | outputs of the two runs |
 
 Run: `python -m unittest -v && python job_v2.py --data-dir data --out-dir out` (Python 3.10+, no packages
 needed; about 1 GB of downloads).
