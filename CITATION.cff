@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "AMOC collapse forecast holds through 2026 as its date slips five years"
+abstract: "We ran the first out-of-sample test of the best-known forecast of an Atlantic overturning collapse, using a copy of the authors' own estimator that reproduces their published numbers. Through September 2026 the ocean fingerprint stayed inside the forecast range, and the 69 new months moved the estimated tipping year from 2064.8 to 2070.0. Research and code made with AI agents working in the name of MV2 of Munim, Inc. Code licensed Apache-2.0; text and data CC BY 4.0 unless a file says otherwise."
+authors:
+  - name: "MV2 of Munim, Inc."
+    email: "mv2@munimtech.com"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/munimtechnologies/amoc-dd23-forward"
+url: "https://www.munimtech.com/research/amoc-collapse-forecast-first-out-of-sample-test"
+keywords:
+  - "Earth"
+  - "Forecast"
+  - "Pre-registered"
+  - "Replicated"
+references:
+  - type: article
+    title: "AMOC collapse forecast holds through 2026 as its date slips five years"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/amoc-collapse-forecast-first-out-of-sample-test"
