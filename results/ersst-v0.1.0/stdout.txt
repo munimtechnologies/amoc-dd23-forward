@@ -1,0 +1,43 @@
+===== run-01-python: python -m unittest -v test_ersst
+
+===== run-02-python: python job_ersst.py --data-dir /data --out-dir /out
+fetched ddfit.py (14417 bytes) from commit 74c83b30f8
+fetched ddrep.py (9939 bytes) from commit 74c83b30f8
+fetched grade.py (2234 bytes) from commit 74c83b30f8
+fetched hadisst.py (6740 bytes) from commit 74c83b30f8
+[    10.7s] ersst.v5.1880.asc read; 132 months so far
+[    22.2s] ersst.v5.1900.asc read; 372 months so far
+[    35.4s] ersst.v5.1920.asc read; 612 months so far
+[    47.6s] ersst.v5.1940.asc read; 852 months so far
+[    59.8s] ersst.v5.1960.asc read; 1092 months so far
+[    72.4s] ersst.v5.1980.asc read; 1332 months so far
+[    84.4s] ersst.v5.2000.asc read; 1572 months so far
+[    97.7s] ersst.v5.2020.asc read; 1812 months so far
+[   100.5s] ersst.v5.2025.asc read; 1872 months so far
+[   101.0s] ersst.v5.2026.asc read; 1882 months so far
+[   101.0s] READ READ_OK: 1870-01 to 2026-10, 0 layout failures, SG data share 1.000-1.000
+[   101.0s] HARMONISE SG k=0.4059 c=-0.0000 rms=0.1243; GM k=0.5197 c=-0.0000 rms=0.0520; AMOC2 r=0.9184 rms=0.1367
+[   105.2s] P: tc 2098.28 -> 2105.95 (LATER); T1 q=0.511 WITHIN_FORECAST; T2 ['CALIBRATED']
+[   105.2s] HEADLINE CONSISTENT; CONVERGENCE UNCHANGED
+[   108.5s] U: tc 2306.11 -> 2383.62 (LATER); T1 q=0.358 WITHIN_FORECAST; T2 ['CALIBRATED']
+[   123.0s] data to 2020-12: P tc=2098.2798122303857, U tc=2306.1123523675988
+[   125.6s] data to 2021-12: P tc=2103.0122093955047, U tc=2361.3642983962227
+[   128.2s] data to 2022-12: P tc=2104.4093315733876, U tc=2387.7624087330273
+[   130.9s] data to 2023-12: P tc=2104.1807390058916, U tc=2394.6554182110976
+[   133.7s] data to 2024-12: P tc=2109.3928464235496, U tc=2476.4023537005805
+[   136.4s] data to 2025-12: P tc=2110.8113088820874, U tc=2516.8168165670436
+[   139.1s] data to 2026-09: P tc=2105.9467581218823, U tc=2383.6230698501786
+[   139.2s] POINT read=READ_OK P: T1=WITHIN_FORECAST T2=['CALIBRATED'] T3=LATER (2098.3 -> 2105.9) headline=CONSISTENT convergence=UNCHANGED
+[   165.7s] penalised bootstrap 100/500
+[   192.8s] penalised bootstrap 200/500
+[   220.1s] penalised bootstrap 300/500
+[   246.8s] penalised bootstrap 400/500
+[   274.7s] penalised bootstrap 500/500
+[   274.7s] P 2020 bootstrap: {'B': 500, 'n_ok': 500, 'n_tipped_in_simulation': 0, 'n_fit_failed': 0, 'tc_mean': 2072.4095477166666, 'tc_q025': 2041.4202207623273, 'tc_q17': 2053.4885896133733, 'tc_q50': 2070.110261776703, 'tc_q83': 2091.941068920087, 'tc_q975': 2114.151399001867}
+[   302.9s] penalised bootstrap 100/500
+[   331.3s] penalised bootstrap 200/500
+[   360.0s] penalised bootstrap 300/500
+[   390.2s] penalised bootstrap 400/500
+[   426.7s] penalised bootstrap 500/500
+[   426.7s] P latest bootstrap: {'B': 500, 'n_ok': 500, 'n_tipped_in_simulation': 0, 'n_fit_failed': 0, 'tc_mean': 2076.6638001657975, 'tc_q025': 2046.782046523353, 'tc_q17': 2058.2981815100893, 'tc_q50': 2073.922110964881, 'tc_q83': 2096.0224204215638, 'tc_q975': 2116.8811363192344}
+[   426.7s] OUTCOME read=READ_OK P: T1=WITHIN_FORECAST T3=LATER (2098.3 -> 2105.9) headline=CONSISTENT convergence=UNCHANGED
